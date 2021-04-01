@@ -10,12 +10,17 @@ body{
 background: linear-gradient(lightyellow, brown);
 height: 100vh;
 color: maroon;
-padding-left: 30%;
+
 font-size: 20px;
 font-weight: bold;
 font-family: "comic sans ms";
 }
-
+  
+ main{
+   width: auto;
+   margin: 0 auto;
+   
+  }
 button{
 width: 100px;
 height: 100px;
@@ -31,6 +36,7 @@ background: lightyellow;
 </style>
 </head>
 <body>
+<div id="main">
 <h1>Coffee Order</h1>
 Type of Coffee:<br>
 <input type="radio" name="coffee" id="regular">Regular<br>
@@ -51,7 +57,7 @@ Dairy: <input type="checkbox" id="milk">
 <br><br>
 <button id="btn">Order</button>
 <p id="result"></p>
-
+  </div>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
